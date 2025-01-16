@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+  <script>
+    // Correct way using JSON.stringify
+    const myObject = { message: "Hello, world!" };
+    document.getElementById("myDiv").innerHTML = JSON.stringify(myObject);
+  </script>
+</body>
+</html>
